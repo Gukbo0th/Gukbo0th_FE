@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-import logo from "../assets/gukbo.jpg";
+import logo from "../assets/logo.svg";
 
 const NavBar = () => {
   return (
@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   width: 100%;
   border-bottom: 1px solid #ebebeb;
   img {
-    width: 80px;
+    width: 140px;
   }
 `;
 
@@ -41,7 +41,6 @@ const NavSection = styled.div`
   justify-content: center;
   align-items: flex-end;
   width: fit-content;
-  margin-top: 4px;
   margin-right: 50px;
 `;
 

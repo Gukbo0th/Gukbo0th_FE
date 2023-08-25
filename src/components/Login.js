@@ -117,6 +117,8 @@ const UserInput = styled.div`
     margin-top: 5px;
     width: 280px;
     height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
   }
 `;
 
