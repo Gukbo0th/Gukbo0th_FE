@@ -1,8 +1,8 @@
 import React from "react";
-import NavBar from "../components/NavBar";
+import Banner from "../components/Banner";
 
 const Main = () => {
-  return <div>메인 페이지</div>;
+  return <Banner />;
 };
 
 export default Main;
