@@ -5,7 +5,7 @@ import Banner from "../components/Banner";
 import dummy from "../dummy.json";
 import bottom from "../assets/bottom.svg";
 
-const Main = () => {
+const MainPage = () => {
   return (
     <>
       <Banner />
@@ -24,7 +24,6 @@ const Main = () => {
               </Info>
             </Item>
           ))}
-          ;
         </Container>
       </Section>
       <Bottom src={bottom} />
@@ -32,7 +31,7 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default MainPage;
 
 const Section = styled.div`
   padding: 30px 150px;
