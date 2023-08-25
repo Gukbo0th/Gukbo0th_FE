@@ -90,6 +90,9 @@ const Wrapper = styled.div`
     margin-bottom: 20px;
     margin-top: 10px;
   }
+  h3 {
+    margin-top: 10px;
+  }
 `;
 
 const InputSection = styled.form`
