@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import dummy from "../dummy.json";
 
-const Funding = () => {
+const FundingPage = () => {
   return (
     <Wrapper>
       <Text>
@@ -24,7 +24,7 @@ const Funding = () => {
   );
 };
 
-export default Funding;
+export default FundingPage;
 
 const Wrapper = styled.div`
   padding: 30px 150px;

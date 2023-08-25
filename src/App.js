@@ -1,10 +1,10 @@
 import "./App.css";
 import React from "react";
 import { Route, Routes } from "react-router-dom";
-import Main from "./pages/Main";
-import Funding from "./pages/Funding";
+import MainPage from "./pages/MainPage";
+import FundingPage from "./pages/FundingPage";
 import MyPage from "./pages/MyPage";
-import Login from "./pages/Login";
+import LoginPage from "./pages/LoginPage";
 import NavBar from "./components/NavBar";
 
 function App() {
@@ -12,10 +12,10 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Main />} />
-        <Route path="/funding" element={<Funding />} />
+        <Route path="/" element={<MainPage />} />
+        <Route path="/funding" element={<FundingPage />} />
         <Route path="/mypage" element={<MyPage />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/login" element={<LoginPage />} />
       </Routes>
     </>
   );
