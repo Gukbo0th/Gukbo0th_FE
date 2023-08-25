@@ -24,7 +24,6 @@ const Main = () => {
               </Info>
             </Item>
           ))}
-          ;
         </Container>
       </Section>
       <Bottom src={bottom} />
