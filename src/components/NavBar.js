@@ -27,7 +27,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 120px;
+  padding: 14px 120px;
   box-sizing: border-box;
   width: 100%;
   border-bottom: 1px solid #ebebeb;
@@ -41,33 +41,30 @@ const NavSection = styled.div`
   justify-content: center;
   align-items: flex-end;
   width: fit-content;
-  margin-top: 10px;
+  margin-top: 4px;
   margin-right: 50px;
 `;
 
 const NavItem = styled(Link)`
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 1.56rem;
+  font-weight: bold;
   text-decoration: none;
   color: #000;
   position: relative;
   overflow: hidden;
+  opacity: 0.3;
   & + & {
-    margin-left: 40px;
+    margin-left: 48px;
   }
   &::before {
     content: "";
-    position: absolute;
-    bottom: -1px;
-    left: 50%;
-    width: 0;
-    height: 2px;
-    background-color: #666666;
     transform: translateX(-50%);
-    transition: width 0.3s ease;
+    transition: width 1s ease;
   }
-
   &:hover::before {
     width: 100%;
+  }
+  &:hover {
+    opacity: 1;
   }
 `;
