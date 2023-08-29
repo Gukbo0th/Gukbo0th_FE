@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 import dummy from "../dummy.json";
+import { useNavigate } from "react-router-dom";
 
 const FundingPage = () => {
+  const navigate = useNavigate();
+  const goDetailPage = () => {
+    navigate("/detail");
+  };
   return (
     <Wrapper>
       <Text>
@@ -11,7 +16,7 @@ const FundingPage = () => {
       </Text>
       <Container>
         {dummy.all.map((item) => (
-          <Item key={item.id}>
+          <Item key={item.id} onClick={goDetailPage}>
             <img src={item.img} />
             <Info>
               <Name>{item.name}</Name>
