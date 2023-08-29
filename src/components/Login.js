@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -18,7 +19,7 @@ const Login = () => {
   const onSubmitHandler = (e) => {
     // TODO : 서버에 로그인 요청
     e.preventDefault();
-    if (email === "user@example.com" && password === "password") {
+    if (email === "cotato@gmail.com" && password === "7777") {
       setIsLoggedIn(true);
       console.log("로그인 성공");
     } else {
@@ -63,7 +64,7 @@ const Login = () => {
           <NoticeSection>
             <p>계정이 없으신가요?</p>
             <Link
-              to="register"
+              to="/register"
               style={{ color: "black", textDecoration: "none" }}
             >
               회원가입
@@ -117,6 +118,8 @@ const UserInput = styled.div`
     margin-top: 5px;
     width: 280px;
     height: 40px;
+    border-radius: 5px;
+    border-width: 1px;
   }
 `;
 
